@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記帳系統</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 防止出現雙重捲軸 */
+            background-color: #f4f6f9;
+        }
+        /* 左上角的「回首頁」按鈕 */
+        .home-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 9999;
+            background: rgba(78, 84, 200, 0.9);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-family: sans-serif;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        .home-btn:hover { background: #3d42b5; }
+
+        /* 全螢幕 Iframe */
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="index.html" class="home-btn">⬅ 回首頁</a>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbz9iKqn8WjBy6rCJ2hhn-oeJSKSyXTaGFHlvuQMEnz64Y4pdOdWqZg6cmcyTk3fEhYLmg/exec"></iframe>
+
+</body>
+</html>
